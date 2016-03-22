@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppTitle</key>
+	<string>DAL Container</string>
+	<key>EmailSettings</key>
+	<dict>
+		<key>Body</key>
+		<string>Add app information and app store URL to download the app. %@ %@</string>
+		<key>Subject</key>
+		<string>Hey there! </string>
+		<key>To</key>
+		<string></string>
+		<key>AppURL</key>
+		<string>http://dalstore.cloudmineapp.com/#/&lt;appUrl&gt;</string>
+	</dict>
+	<key>AppInfoContent</key>
+	<string>This is the best app ever. Provide more description of what the app does.</string>
+	<key>DALEmail</key>
+	<string>dal_contact@amgen.com</string>
+	<key>AppStoreURL</key>
+	<string>http://dalstore.cloudmineapp.com</string>
+	<key>NewRelicToken</key>
+	<string>AA9f2091cb82a39754daca2fc519a4fa59ec0ab6ca</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+PODS:
+  - Charts (2.1.4)
+  - ResearchKit (1.2.1)
+
+DEPENDENCIES:
+  - Charts
+  - ResearchKit (~> 1.0)
+
+SPEC CHECKSUMS:
+  Charts: 870589b6b4bf8468baacea8869c28983d71f602c
+  ResearchKit: 606d20301e576157fb0accc57f63aba5e1f3a15f
+
+COCOAPODS: 0.39.0

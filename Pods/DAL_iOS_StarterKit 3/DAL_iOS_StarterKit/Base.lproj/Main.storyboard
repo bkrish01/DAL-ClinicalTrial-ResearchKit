@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gqa-y0-dRg">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--APP TITLE-->
+        <scene sceneID="K7A-H4-S3b">
+            <objects>
+                <viewController title="APP TITLE" id="a53-Yb-uh0" customClass="ViewController" customModule="DAL_iOS_StarterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uuF-ze-MzN"/>
+                        <viewControllerLayoutGuide type="bottom" id="hzf-1l-Blr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uSu-BI-cDB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App content goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNI-GS-e0Z">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="389" width="326" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="KNI-GS-e0Z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="KNI-GS-e0Z"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem image="email" id="uVg-16-fWI">
+                            <connections>
+                                <action selector="sendEmailToDal:" destination="a53-Yb-uh0" id="wGp-3h-k3b"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="Km6-cw-ido"/>
+                        <barButtonItem image="info" id="Vua-5j-VjS">
+                            <connections>
+                                <action selector="showInfoTapped:" destination="a53-Yb-uh0" id="38e-JW-XhF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="GAF-6C-HLs"/>
+                        <barButtonItem image="rocket" id="ovb-XH-Ujw">
+                            <connections>
+                                <segue destination="7fR-8q-1Nb" kind="show" identifier="showAppStore" id="KSV-r4-U1z"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="aYK-ci-nuw"/>
+                        <barButtonItem image="share" id="VCz-sk-KfM">
+                            <connections>
+                                <action selector="shareApp:" destination="a53-Yb-uh0" id="CMl-Fv-zOt"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="APP TITLE" id="uhE-Km-pMa"/>
+                    <connections>
+                        <outlet property="contactDal" destination="uVg-16-fWI" id="Qfb-Ag-hJV"/>
+                        <outlet property="launchAppStore" destination="ovb-XH-Ujw" id="Tx0-04-92q"/>
+                        <outlet property="sendEmail" destination="VCz-sk-KfM" id="DRz-In-lxc"/>
+                        <outlet property="showInfo" destination="Vua-5j-VjS" id="Axg-fZ-7Zw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rke-JD-nVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403.5" y="-146.25"/>
+        </scene>
+        <!--DAL App Store-->
+        <scene sceneID="5xg-Tw-yKx">
+            <objects>
+                <viewController title="DAL App Store" id="7fR-8q-1Nb" customClass="AppStoreViewController" customModule="DAL_iOS_StarterKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w7H-c1-1vH"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYm-zx-FAA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p8F-Fn-gSn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" fixedFrame="YES" scalesPageToFit="YES" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQq-OV-agZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="756"/>
+                                </variation>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="appStore" destination="bQq-OV-agZ" id="oDs-Fd-MBx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhO-oQ-3OS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1191" y="-147"/>
+        </scene>
+        <!--APP TITLE-->
+        <scene sceneID="cDE-vt-3ng">
+            <objects>
+                <navigationController title="APP TITLE" toolbarHidden="NO" id="gqa-y0-dRg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iqf-iX-Coj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Zc4-wm-vvO">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="a53-Yb-uh0" kind="relationship" relationship="rootViewController" id="9ol-Fp-UpF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3f-t2-hC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-375" y="-146.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="email" width="33" height="33"/>
+        <image name="info" width="33" height="33"/>
+        <image name="rocket" width="35" height="35"/>
+        <image name="share" width="35" height="35"/>
+    </resources>
+</document>
